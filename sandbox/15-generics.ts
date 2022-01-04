@@ -38,4 +38,6 @@ const addUIDCaptureForceObjectProperties = <T extends { name: string }>(
   }
 }
 
+const docFour = addUIDCaptureForceObjectProperties({ name: 'asdf' })
+
 // const docFour = addUIDCaptureForceObjectProperties({ age: 20 }) // fail because must have property name

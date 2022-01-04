@@ -54,7 +54,7 @@ const v11 = makeTuple<string | null>('a', 6) // error, expect 2 arguments
 // then you can specify default generic type, just like default variable
 const makeTupleWithDefault = <X, Y = number>(x: X, y: Y): [X, Y] => [x, y]
 
-const v12 = makeTupleWithDefault<string | null>('a', 6) // error, expect 2 arguments
+const v12 = makeTupleWithDefault<string | null>('a', 6) // good, because we have default generic type
 
 // ============= EXTENDS (constraints on what can be passed to the param in a function)
 
